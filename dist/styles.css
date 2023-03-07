@@ -1,19 +1,35 @@
 body {
     height: 100vh;
     overflow: hidden;
-    text-align: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    flex: 2;
 }
 
 .main {
+    flex: 12;
+    display: flex;
+}
+
+.navBar {
     flex: 1;
-    border: 1px solid black;
+}
+
+.content {
+    flex: 5;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
-#first {
+.tile {
     border: 1px solid black;
+}
+
+.footer {
+    flex: 1;
 }
